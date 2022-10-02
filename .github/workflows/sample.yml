@@ -1,16 +1,16 @@
 # Workflow Name
 name: sample workflow to run shell commands
 #Action on repository like push,issue,pull etc
-on: [push,pull_request]
+on: [push]
 #Define jobs
 
 jobs:
-  run-shell-command:
+  run-shell-command-fist-job:
     runs-on: ubuntu-latest
 #define steps in a job
     steps:
+ # a step can perfom an action or shell/commands
       - name: display a String
-# a step can perfom an action or shell/commands
         run: echo "Hello World"
       - name: multi line scripts
         run: |
