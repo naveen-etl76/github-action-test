@@ -1,0 +1,66 @@
+name: Ali
+age: 28
+#string represenation when we have special characters in string
+email: "naveen@gmail.com"
+
+address:
+    - Permanent: 
+      City: Singarayakonda
+      State: AP
+      District: Praksasm
+    - Current: 
+      City: Bangalore
+      State: Karnataka
+      District: Bangalore-urban
+active: true
+#objects representations
+key: #objects 
+    key1: value1
+    key2: value2
+#nested objects representations
+    key3: 
+        key4 : value4
+        key5 : value5
+ #altrnative  way of represenation of objets --equivalent representation of line 5 to 10
+jsonobject: { key1: value,key2: value2,key3: { key4: value4, key5: value5 } }
+
+#Array usage 
+array:
+    - Item1
+    - Item2
+    - { key1: value1 } 
+#Array alternative way of representation of line 18 ato 20 
+array_equivalent: [Item1,Item2,{key1: value1}]
+
+#objects array
+
+ObjectsArray:
+    - key1: value1
+    - key2: value2
+# array object can be written as below also valid line 31 and 29,29 and 32 are 
+#equual way of rep as object inside array
+    - { key3: value3 }
+    - key4: value4
+# what if we have multiple objects under same row
+objectsarry1:
+    - key1: value1
+      key1-1: value1-1
+      key1-2: value1-2
+    - key2: value2
+      key2-1: value2-1
+      key2-2: value2-2
+      key2-3: value2-3
+    - key3: value3
+# ignore new line and consider at last line new linw CTRL+SHIFT+p conver to json
+longtext: >
+    line1
+    line2
+    line3
+    line4
+#consider new line
+longtext2: |
+    line1
+    line2
+    line3
+    line4   
+
