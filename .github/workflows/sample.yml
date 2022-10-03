@@ -19,4 +19,4 @@ jobs:
       - name: "Python commands"
         run: |
           python -v
-          print("Hello World!!!")
+          python print("Hello World!!!")
