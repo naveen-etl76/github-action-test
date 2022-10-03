@@ -20,5 +20,22 @@ jobs:
         run: |
           import platform
           print(platform.processor())
-          print("Hello World!!!")
+          print("Hello World from ubuntu!!!")
+        shell: python
+
+  run-windows-command-fist-job:
+    runs-on: windows-latest
+#define steps in a job
+    steps:
+ # a step can perfom an action or shell/commands
+      - name: display current directory in power shell
+        run: Get-Location
+      - name: Directory in Bash shell
+        run: pwd
+        shell: bash
+      - name: "Python commands"
+        run: |
+          import platform
+          print(platform.processor())
+          print("Hello World from windows!!!")
         shell: python
