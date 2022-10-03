@@ -25,6 +25,7 @@ jobs:
 
   run-windows-command-fist-job:
     runs-on: windows-latest
+    needs: ['run-shell-command-fist-job']
 #define steps in a job
     steps:
  # a step can perfom an action or shell/commands
