@@ -11,12 +11,11 @@ jobs:
     steps:
  # a step can perfom an action or shell/commands
       - name: display a String
-        run: echo "Hello World"
+        run: echo "I am form Bash shell"
       - name: multi line scripts
         run: |
           node -v
           npm -v
       - name: "Python commands"
         run: |
-          import platform
-          print(platform.processor())
+          print("I am from python")
