@@ -18,5 +18,7 @@ jobs:
           npm -v
       - name: "Python commands"
         run: |
-          python -v
-          python print("Hello World!!!")
+          import platform
+          print(platform.processor())
+          print("Hello World!!!")
+        shell: python
