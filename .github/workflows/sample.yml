@@ -18,4 +18,4 @@ jobs:
           npm -v
       - name: "Python commands"
         run: |
-          print("I am from python")
+          pyton -v
